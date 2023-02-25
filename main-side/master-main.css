@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Poppins-Normal';
+}
+
+.container {
+    width: 90%;
+    margin: 16px;
+}
+.icon {
+    width: 26px;
+    height: 26px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-container h3 {
+    font-size: 26px;
+    margin-left: 20px;
+}
+aside {
+    padding: 30px;
+    width: 230px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #eee;
+    box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.144);
+    height: 95vh;
+}
+.list-container {
+    height: 60%;
+    margin-top: 80px;
+    
+}
+.list-item {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    opacity: 0.6    ;
+}
+.active-item {
+    position: relative;
+    opacity: 1;
+}
+
+.active-item::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 90%;
+    background-color: var(--lightPurple);
+    left: -30px;
+    border-radius: 0 2px 2px 0;
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    -ms-border-radius: 0 2px 2px 0;
+    -o-border-radius: 0 2px 2px 0;
+}
+.list-item:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.list-item h4:hover {
+    scale: 1.1;
+}
+
+.list-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.account-container {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.icon-user {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.account {
+    font-size: 12px;
+    margin-left: 8px;
+}
+.account h5 {
+    color: gray;
+}
