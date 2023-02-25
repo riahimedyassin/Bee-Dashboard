@@ -39,7 +39,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 1200px;
+    width: 90%;
     height: 650px;
     background-color: white;
     border-radius: 10px;
@@ -158,4 +158,29 @@ body {
 .error {
     border:1px solid  red;
 
+}
+@media screen and (max-width:800px) {
+    body {
+        background-size: contain    ;
+    }
+    .left-side  {
+        display: none;
+    }
+    .container {
+        width: 90vw;
+    }
+    .right-side {
+        width: 100%;
+    }
+    .right-side .input-container {
+        margin-left:0 ;
+        width: 100%;
+    }
+    .right-side .input-container input {
+        width: 100%;
+    }
+    .right-side > h4 {
+        display: none;
+    }
+    
 }
