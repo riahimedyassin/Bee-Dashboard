@@ -89,6 +89,10 @@ aside {
     opacity: 0.9;
     cursor: pointer;
 }
+.list-item h4 a {
+    text-decoration: none;
+    color: black;
+}
 .list-item h4:hover {
     scale: 1.1;
 }
@@ -124,7 +128,7 @@ aside {
     margin-left: 8px;
 }
 .account h5 {
-    color: gray;
+    color: #808080;
 }
 .logout {
     display: flex;
@@ -275,11 +279,11 @@ main hr {
     box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.178);
     color: white;
     margin-right: 30px;
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 .card-employees {
     background-image: linear-gradient(20deg,var(--lightPurple),purple);
@@ -319,7 +323,7 @@ main hr {
 .card > h6 {
     margin-left: 8px;
     font-weight: normal;
-    font-size:16px;
+    font-size:0.7rem;
     word-spacing: 15px;
     margin-top: 20px;
 }
@@ -419,4 +423,121 @@ main hr {
 .close:hover {
     background-color: rgba(255, 0, 0, 0.522);
 
+}
+@media screen and (max-width:800px) {
+    aside {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+    }
+    .overview-content , .card-container, .actions-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .overview-content {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .card-container + h2 {
+        margin-top: 400px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .sm-card-img-container {
+        height: 300px;
+    }
+
+    .action {
+        margin-bottom: 20px;
+    }
+    .header {
+        justify-content: space-around;
+    }
+    .date {
+        display: none;
+    }
+    .date + input {
+        margin-right: 20px;
+    }
+}
+table td  {
+    border-collapse: collapse;
+}
+table th {
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+table tr th {
+    background-image: linear-gradient(20deg,var(--lightBlue),var(--lightPurple));
+    color: white;
+    width: 200px;
+    padding: 10px;
+
+}
+table tr {
+    height: 50px;
+}
+.action-table {
+    display: flex ;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+table tr td {
+    text-align: center;
+    background-color: #eee;
+}
+.mt {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+td a {
+    text-decoration: none;
+}
+td a:hover {
+    text-decoration: underline;
+}
+.profile-container {
+    display: flex;
+    height: 500px;
+
+}
+.profile-container .left-profile {
+    width: 30%;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.icon-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top:36px ;
+}
+.profile-main-infos {
+    text-align: center;
+    margin-top: 20px;
+}
+.profile-main-infos h2 {
+    margin-bottom: 8px;
 }
