@@ -6,10 +6,8 @@ checkMail=() => {
         document.querySelector(".mail-error").innerHTML="Type a valid Email"
         return false
     }
-    else {
-        document.querySelector(".mail-error").innerHTML=""
-        myMail.classList.remove("error");
-    }
+    document.querySelector(".mail-error").innerHTML=""
+    myMail.classList.remove("error");
     return true
     
     
@@ -22,10 +20,8 @@ checkPass=()=> {
         document.querySelector(".pass-error").innerHTML="Type a valid Password"
         return false
     }
-    else {
-        document.querySelector(".pass-error").innerHTML=""
-        myPass.classList.remove("error");
-    }
+    document.querySelector(".pass-error").innerHTML=""
+    myPass.classList.remove("error");
     return true
 
 }
