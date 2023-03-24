@@ -12,3 +12,11 @@ let myAside=document.querySelector("aside")
 myBurger.addEventListener("click",()=> {
     myAside.classList.toggle("display-burger")
 })
+let myDelete=document.querySelector(".deleteContainer"); 
+let myDeleteButton=document.querySelectorAll(".delete");
+myDeleteButton.forEach(el=> {
+   el.addEventListener("click",()=> {
+    console.log(this)
+        myDelete.classList.toggle("hiddeDelete");
+   });
+});

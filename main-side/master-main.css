@@ -38,7 +38,7 @@ aside {
     -o-border-radius: 10px;
     background-color: #eee;
     box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.144);
-    height: 95vh;
+    min-height: 95vh;
 }
 .list-container {
     height: 60%;
@@ -748,6 +748,7 @@ td a:hover {
 .material-list {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 36px;
 }
 @media screen and (max-width:800px) {
     .material-list {
@@ -1002,4 +1003,62 @@ td a:hover {
     -moz-transform: translateX(30%);
     -ms-transform: translateX(30%);
     -o-transform: translateX(30%);
+}
+.hiddeMore {
+    display: none;
+}
+.showMore {
+    display: flex;
+}
+.deleteContainer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+    background-color: #eee;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.61);
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+}
+.hiddeDelete {
+    display: none;
+}
+.deleteContainer h2, .deleteContainer p {
+    margin-top: 16px;
+}
+.btnDel,.btnUndo {
+    width: 80px;
+    border: none;
+    height: 40px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-family: 'Poppins-Normal';
+    margin-top: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.122);
+}
+.btnDel {
+    background-color: rgb(219, 6, 6);
+    color: white;
+}
+.delete {
+    cursor: pointer;
 }
