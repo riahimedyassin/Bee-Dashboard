@@ -5,3 +5,13 @@ myEditButton.addEventListener("click",()=> {
         el.toggleAttribute("disabled")
     })
 })
+let myHidden=document.querySelectorAll(".hidden-input");
+myHidden.forEach(el=> {
+    el.classList.add("hiddeMore");
+})
+let myShow=document.querySelector(".show-more");
+myShow.addEventListener("click",()=> {
+    myHidden.forEach(el=> {
+        el.classList.toggle("showMore");
+    })
+})

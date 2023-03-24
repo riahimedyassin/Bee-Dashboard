@@ -10,6 +10,15 @@
         <link rel="shortcut icon" href="../src/icons/favicon.png" type="image/x-icon">
     </head>
 <body>
+    <div class="deleteContainer hiddeDelete">
+        <img src="../src/icons/deleteUser.png" alt="" style="width:100px">
+        <h2>Are you sure to delete ?</h2>
+        <p>Do you really want to delete this employee data ? This process cannot be undone.</p>
+        <div class="deleteReponse">
+            <button class="btnDel">Delete</button>
+            <button class="btnUndo">Undo</button>
+        </div>
+    </div>
     <div class="notification-container">
         <div class="notif">
             <h2>Notification Title</h2>
@@ -24,6 +33,7 @@
             <p>This is just a test for notification descreption</p>
         </div>
     </div>
+    
     <div class="container">
         <aside>
             <div class="logo-container">
@@ -51,9 +61,13 @@
                     <img src="../src/icons/conge.png" alt="" class="list-icon">
                     <h4><a href="conge.html">Congé</a></h4>
                 </div>
-                <div class="list-item">
+                <div class="list-item ">
                     <img src="../src/icons/reclamation.png" alt="" class="list-icon">
                     <h4><a href="reclamation.html">Reclamation</a></h4>
+                </div>
+                <div class="list-item ">
+                    <img src="../src/icons/stats.png" alt="" class="list-icon">
+                    <h4><a href="stats.html">Stats</a></h4>
                 </div>
             </div>
             <div class="account-container">
@@ -97,7 +111,7 @@
                         <td>99-999-999</td>
                         <td class="action-table">
                             <img src="../src/icons/edit.png" alt="" class="icon">
-                            <img src="../src/icons/delete.png" alt="" class="icon">
+                            <img src="../src/icons/delete.png" alt="" class="icon delete">
                         </td>            
                     </tr>
                     <tr>
@@ -107,7 +121,7 @@
                         <td>99-999-999</td>
                         <td class="action-table">
                             <img src="../src/icons/edit.png" alt="" class="icon">
-                            <img src="../src/icons/delete.png" alt="" class="icon">
+                            <img src="../src/icons/delete.png" alt="" class="icon delete">
                         </td>            
                     </tr>
                     <tr>
@@ -116,8 +130,8 @@
                         <td>cyrine@gmail.com</td>
                         <td>99-999-999</td>
                         <td class="action-table">
-                            <img src="../src/icons/edit.png" alt="" class="icon">
-                            <img src="../src/icons/delete.png" alt="" class="icon">
+                            <img src="../src/icons/edit.png" alt="" class="icon ">
+                            <img src="../src/icons/delete.png" alt="" class="icon delete">
                         </td>            
                     </tr>
                 </table>
