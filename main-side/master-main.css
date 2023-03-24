@@ -186,7 +186,7 @@ main {
     width: 2px;
     height: 100%;
     background-color: gray;
-    right: -80px;
+    right: -2vw;
 }
 .header input {
     width: 300px;
@@ -641,8 +641,7 @@ td a:hover {
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.171);
     margin-right: 36px;
     margin-top: 36px;
-    
-    
+    overflow: hidden;
 }
 .rec-card h2 {
     margin-bottom:8px ;
@@ -651,9 +650,17 @@ td a:hover {
     margin-bottom:8px;
 }
 .rec-card button {
-    width: 20%;
+    width: 80px;
     height: 40px;
     font-size: 12px;
+    font-family: 'Poppins-Normal';
+}
+@media screen and (max-width:800px) {
+    .rec-card {
+        height: 400px;
+        width: 100%;
+    }
+
 }
 .button-card {
     display: flex;
@@ -1059,6 +1066,47 @@ td a:hover {
     background-color: rgb(219, 6, 6);
     color: white;
 }
+.btnUndo {
+    background-color: #eee;
+    color: black;
+}
 .delete {
     cursor: pointer;
+}
+.statsContainer {
+    display: flex;
+}
+.stat {
+    width: 400px;
+    height: 300px;
+    background-color: rgb(110, 16, 204);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.374);
+    margin-left: 36px;
+    padding: 16px;
+    margin-top: 36px;
+
+}
+.stat h2 {
+    margin-top: 220px;
+    text-align: center;
+    color: white;
+}
+.info {
+    background-color: rgba(255, 255, 0, 0.368);
+    width: 400px;position: relative;
+    padding-left: 5px;
+    margin-bottom: 36px;
+}
+.info::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: yellow;
+    left: -5px;
 }
