@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bee | Profile</title>
-        <link rel="stylesheet" href="master-main.css">
-        <link rel="stylesheet" href="../root.css">
-        <link rel="shortcut icon" href="../src/icons/favicon.png" type="image/x-icon">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee | Add Employee</title>
+    <link rel="stylesheet" href="master-main.css">
+    <link rel="stylesheet" href="../root.css">
+    <link rel="shortcut icon" href="../src/icons/favicon.png" type="image/x-icon">
+</head>
+
 <body>
     <div class="notification-container">
         <div class="notif">
@@ -22,15 +24,6 @@
         <div class="notif">
             <h2>Notification Title</h2>
             <p>This is just a test for notification descreption</p>
-        </div>
-    </div>
-    <div class="deleteContainer hiddeDelete">
-        <img src="../src/icons/deleteUser.png" alt="" style="width:100px">
-        <h2>Are you sure to delete ?</h2>
-        <p>Do you really want to delete this employee data ? This process cannot be undone.</p>
-        <div class="deleteReponse">
-            <button class="btnDel">Delete</button>
-            <button class="btnUndo btnDel">Undo</button>
         </div>
     </div>
     <div class="container">
@@ -60,7 +53,7 @@
                     <img src="../src/icons/conge.png" alt="" class="list-icon">
                     <h4><a href="conge.html">Congé</a></h4>
                 </div>
-                <div class="list-item">
+                <div class="list-item ">
                     <img src="../src/icons/reclamation.png" alt="" class="list-icon">
                     <h4><a href="reclamation.html">Reclamation</a></h4>
                 </div>
@@ -70,7 +63,7 @@
                 </div>
                 <div class="list-item ">
                     <img src="../src/icons/stats.png" alt="" class="list-icon">
-                    <h4><a href="stats.html">Situation</a></h4>
+                    <h4><a href="stats.html">Stats</a></h4>
                 </div>
             </div>
             <div class="account-container">
@@ -92,148 +85,120 @@
                 </div>
                 <div class="date">
                     <img src="../src/icons/calender.png" alt="" class="icon">
-                    <h3>25 Feb.</h3>
+                    <h3 class="date-now">25 Feb.</h3>
                 </div>
-                <input type="search" name="" id="" placeholder="Search" >
+                <input type="search" name="" id="" placeholder="Search">
                 <div class="notification">
                     <img src="../src/icons/notification.png" alt="" class="notif-icon">
                 </div>
             </div>
             <hr>
-            <h2 class="mt">Employee | Nedra Guessmi</h2>
-            <div class="profile-container">
-                <div class="left-profile">
-                    <img src="../src/imgs/user.jpg" alt="" class="icon-profile">
-                    <div class="profile-main-infos">
-                        <h2>Nedra Guessmi</h2>
-                        <h4>Developer</h4>
-                        <div class="btnHolder">
-                            <button class="btnNotify">Notfiy</button>
-                            <button class="btnDanger">Alert</button>
-                        </div> 
-                        <h4>General info</h4>
-                        <div class="infoGeneral">
-                            <h5>Employment Type</h5>
-                            <p>Remote</p>
-                        </div>
-                        <div class="infoGeneral">
-                            <h5>Working Since</h5>
-                            <p>29/09/23</p>
-                        </div>
-                        <div class="infoGeneral">
-                            <h5>Salary</h5>
-                            <p>1100$</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="right-profile">
-                    <div class="action-container">
-                        <img src="../src/icons/edit.png" alt="" class="icon edit-icon">
-                        <img src="../src/icons/delete.png" alt="" class="icon delete">
-                    </div>
-                    <h2>Options</h2>
+            <h2 class="mt">New Employee</h2>
+            <div class="container">
+                <div class="employeeInput">
                     <div class="input-container">
                         <div class="input">
-                            <label for="">Full Name</label>
-                            <input type="text" value="Nedra Guessmi" disabled class="input-edit">
+                            <label for="">Full Name*</label>
+                            <input type="text" value="" class="input-edit" placeholder="Name & Forname">
                         </div>
                         <div class="input">
-                            <label for="">Sexe</label>
-                            <select name="" id="" disabled class="input-edit">
+                            <label for="">Sexe*</label>
+                            <select name="" id="" class="input-edit">
                                 <option value="">Homme</option>
                                 <option value="" selected>Femme</option>
                             </select>
                         </div>
-                       
+
                     </div>
                     <div class="input-container">
                         <div class="input">
-                            <label for="">Birth Date</label>
-                            <input type="text" value="18/03/03" disabled class="input-edit">
+                            <label for="">Birth Date*</label>
+                            <input type="text" value="" class="input-edit" placeholder="DD/MM/YY">
                         </div>
                         <div class="input">
-                            <label for="">Role</label>
-                            <select name="" id="" disabled class="input-edit">
+                            <label for="">Role*</label>
+                            <select name="" id="" class="input-edit">
                                 <option value="">Developper</option>
                                 <option value="">RH</option>
                                 <option value="">Na3rech</option>
                             </select>
                         </div>
-                       
+
                     </div>
                     <div class="input-container">
                         <div class="input">
-                            <label for="">Email</label>
-                            <input type="text" value="NedraGuessmi@gmail.com" disabled class="input-edit">
+                            <label for="">Email*</label>
+                            <input type="text" value="" class="input-edit" placeholder="expl@mail.domain">
                         </div>
                         <div class="input">
-                            <label for="">Phone Number</label>
-                            <input type="text" name="" id="" value="92-999-999" disabled class="input-edit"> 
+                            <label for="">Phone Number*</label>
+                            <input type="text" name="" id="" value="" class="input-edit"
+                                placeholder="+(CC) Your Number">
                         </div>
                     </div>
-                    
-                    <div class="input-container hidden-input" >
+
+                    <div class="input-container hidden-input">
                         <div class="input">
-                            <label for="">CNAM</label>
-                            <input type="text" value="154215421542" disabled class="input-edit">
+                            <label for="">CNAM*</label>
+                            <input type="text" value="" class="input-edit" placeholder="CNAM Code">
                         </div>
                         <div class="input">
-                            <label for="">CIN</label>
-                            <input type="password" name="" id="" value="92-999-999" disabled class=""> 
+                            <label for="">CIN*</label>
+                            <input type="password" name="" id="" value="" class="" placeholder="Safe Field">
                         </div>
                     </div>
                     <div class="input-container hidden-input">
                         <div class="input">
-                            <label for="">Country</label>
-                            <input type="text" value="Tunisie" disabled class="input-edit">
+                            <label for="">Country*</label>
+                            <input type="text" value="" class="input-edit" placeholder="Country Name">
                         </div>
                         <div class="input">
-                            <label for="">State</label>
-                            <input type="text" name="" id="" value="Bèja" class="input-edit" disabled>
+                            <label for="">State*</label>
+                            <input type="text" name="" id="" value="" class="input-edit" placeholder="Exemple : Bèja">
                         </div>
                     </div>
                     <div class="input-container hidden-input">
                         <div class="input">
-                            <label for="">Adress 1</label>
-                            <input type="text" value="City Al Bustan" disabled class="input-edit">
+                            <label for="">Adress 1*</label>
+                            <input type="text" value="" class="input-edit" placeholder="Exemple : City Al Bustan">
                         </div>
                         <div class="input">
                             <label for="">Adress 2</label>
-                            <input type="text" name="" id="" value="City Al Bustan" class="input-edit" disabled>
+                            <input type="text" name="" id="" value="" class="input-edit" placeholder="(Optinal)">
                         </div>
                     </div>
-                    <div class="input-container hidden-input" >
+                    <div class="input-container hidden-input">
                         <div class="input">
                             <label for="">Conge Credit</label>
-                            <input type="number" value="20" disabled class="input-edit">
+                            <input type="number" value="20" class="input-edit" disabled>
                         </div>
                         <div class="input">
                             <label for="">Status</label>
-                            <select name="" id="" disabled class="input-edit">
+                            <select name="" id="" class="input-edit">
                                 <option value="celib">Celibbataire</option>
                                 <option value="mar">Married</option>
                                 <option value="">Na3rech</option>
                             </select>
                         </div>
                     </div>
-                    <div class="input-container hidden-input" >
+                    <div class="input-container hidden-input">
                         <div class="input">
                             <label for="">Kids</label>
-                            <input type="number" value="0" disabled class="input-edit">
+                            <input type="number" value="0" class="input-edit">
                         </div>
                         <div class="input">
                             <label for="">Password</label>
-                            <input type="password" value="28/06/03" disabled class="input-edit">
+                            <input type="password" value="" class="input-edit" placeholder="Avoid Week Passwords">
+                            <label for="" style="margin-top: 8px;"><a href="" style="color: gray;">Generate a strong password</a></label>
                         </div>
                     </div>
-                    <button class="update-button show-more">Show More</button>
-                    <button class="update-button">Update</button>
+                    <button class="update-button show-more">Add</button>
                 </div>
             </div>
-            
-        </main>
+    </div>
+    </main>
     </div>
 </body>
-<script src="editEmployee.js"></script>
 <script src="main-master.js"></script>
+
 </html>

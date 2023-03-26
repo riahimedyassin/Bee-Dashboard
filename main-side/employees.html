@@ -33,7 +33,13 @@
             <p>This is just a test for notification descreption</p>
         </div>
     </div>
-    
+    <div class="notify" >  
+        <img src="../src/icons/close.png" alt="" class="icon-min-close close" style="margin-left: 90%;">  
+        <h2>Notify <span id="userNotify">Nedra Guessmi</span></h2>
+        <input type="text" placeholder="Subject" >
+        <textarea name="" id="" placeholder="Write Your short message here" ></textarea>
+        <button class="update-button">Send</button>
+    </div>
     <div class="container">
         <aside>
             <div class="logo-container">
@@ -64,6 +70,10 @@
                 <div class="list-item ">
                     <img src="../src/icons/reclamation.png" alt="" class="list-icon">
                     <h4><a href="reclamation.html">Reclamation</a></h4>
+                </div>
+                <div class="list-item">
+                    <img src="../src/icons/event.png" alt="" class="list-icon">
+                    <h4><a href="presence.html">Events</a></h4>
                 </div>
                 <div class="list-item ">
                     <img src="../src/icons/stats.png" alt="" class="list-icon">
@@ -97,10 +107,15 @@
                 </div>
             </div>
             <hr>
-            <h2 class="mt">List of employees</h2>
+            <div class="employeeHeader">
+                <h2 class="mt">List of employees</h2>
+                <button class="btnNotify"><a href="addEmployee.html">New Employee</a></button>
+            </div>
+            
             <div class="container table-container">
                 <table>
                     <tr>
+                        <th>Picture</th>
                         <th>Full-name</th>
                         <th>Role</th>
                         <th>Mail</th>
@@ -108,34 +123,40 @@
                         <th>Actions</th>
                     </tr>
                     <tr>
-                        <td><a href="">Cyrine Srairi</a></td>
+                        <td><img src="../src/imgs/user.jpg" alt="" class="icon-user"></td>
+                        <td><a href="profile.html">Cyrine Srairi</a></td>
                         <td>Developper</td>
                         <td>cyrine@gmail.com</td>
                         <td>99-999-999</td>
                         <td class="action-table">
+                            <img src="../src/icons/notification.png" alt="" class="icon notifyMe">
                             <img src="../src/icons/edit.png" alt="" class="icon">
                             <img src="../src/icons/delete.png" alt="" class="icon delete">
                         </td>            
                     </tr>
                     <tr>
-                        <td>Cyrine Srairi</td>
+                        <td><img src="../src/imgs/user.jpg" alt="" class="icon-user"></td>
+                        <td><a href="profile.html">Cyrine Srairi</a></td>
                         <td>Developper</td>
                         <td>cyrine@gmail.com</td>
                         <td>99-999-999</td>
                         <td class="action-table">
+                            <img src="../src/icons/notification.png" alt="" class="icon notifyMe">
                             <img src="../src/icons/edit.png" alt="" class="icon">
                             <img src="../src/icons/delete.png" alt="" class="icon delete">
-                        </td>            
+                        </td>        
                     </tr>
                     <tr>
-                        <td>Cyrine Srairi</td>
+                        <td><img src="../src/imgs/user.jpg" alt="" class="icon-user"></td>
+                        <td><a href="profile.html">Cyrine Srairi</a></td>
                         <td>Developper</td>
                         <td>cyrine@gmail.com</td>
                         <td>99-999-999</td>
                         <td class="action-table">
-                            <img src="../src/icons/edit.png" alt="" class="icon ">
+                            <img src="../src/icons/notification.png" alt="" class="icon notifyMe">
+                            <img src="../src/icons/edit.png" alt="" class="icon">
                             <img src="../src/icons/delete.png" alt="" class="icon delete">
-                        </td>            
+                        </td>         
                     </tr>
                 </table>
             </div>
