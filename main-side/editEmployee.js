@@ -14,4 +14,4 @@ myShow.addEventListener("click",()=> {
     myHidden.forEach(el=> {
         el.classList.toggle("showMore");
     })
-})
+});
