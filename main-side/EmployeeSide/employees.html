@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bee | Employees</title>
+        <link rel="stylesheet" href="../css/master-main.css">
+        <link rel="stylesheet" href="../../css/root.css">
+        <link rel="shortcut icon" href="../../src/icons/favicon.png" type="image/x-icon">
+    </head>
+<body>
+    <div class="preloader-animation">
+        <div id="wifi-loader">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+                <circle class="back" cx="43" cy="43" r="40"></circle>
+                <circle class="front" cx="43" cy="43" r="40"></circle>
+                <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+                <circle class="back" cx="30" cy="30" r="27"></circle>
+                <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+            <div class="text" data-text="Bee is loading"></div>
+        </div>
+    </div>
+    <div class="deleteContainer hiddeDelete">
+        <img src="../../src/icons/deleteUser.png" alt="" style="width:100px">
+        <h2>Are you sure to delete ?</h2>
+        <p>Do you really want to delete this employee data ? This process cannot be undone.</p>
+        <div class="deleteReponse">
+            <button class="btnDel">Delete</button>
+            <button class="btnUndo btnDel">Undo</button>
+        </div>
+    </div>
+    <div class="notification-container">
+        <h2>Notification</h2>
+        <div class="notifHolder">
+            <div class="notif">
+                <h3>Notification Title</h3>
+                <p>This is just a test for notification descreption</p>
+                <button>Accept</button>
+                <button>Decline</button>
+            </div>
+            <div class="notif">
+                <h3>Notification Title</h3>
+                <p>This is just a test for notification descreption</p>
+            </div>
+            <div class="notif">
+                <h3>Notification Title</h3>
+                <p>This is just a test for notification descreption</p>
+            </div>    
+        </div>
+    </div>
+    <div class="notify" >  
+        <img src="../../src/icons/close.png" alt="" class="icon-min-close close" style="margin-left: 90%;">  
+        <h2>Notify <span id="userNotify">Nedra Guessmi</span></h2>
+        <input type="text" placeholder="Subject" >
+        <textarea name="" id="" placeholder="Write Your short message here" ></textarea>
+        <button class="update-button">Send</button>
+    </div>
+    <div class="container">
+        <aside>
+            <div class="logo-container">
+                <img src="../../src/icons/logo.png" alt="" class="icon active">
+                <h3>Bee</h3>
+            </div>
+            <div class="list-container">
+                <div class="list-item ">
+                    <img src="../../src/icons/overview.png" alt="" class="list-icon ">
+                    <h4><a href="../index.html">Overview</a></h4>
+                </div>
+                <div class="list-item active-item">
+                    <img src="../../src/icons/employees.png" alt="" class="list-icon">
+                    <h4><a href="employees.html">Employees</a></h4>
+                </div>
+                <div class="list-item">
+                    <img src="../../src/icons/presence.png" alt="" class="list-icon">
+                    <h4><a href="../presence.html">Presence</a></h4>
+                </div>
+                <div class="list-item">
+                    <img src="../../src/icons/material.png" alt="" class="list-icon">
+                    <h4><a href="../material.html">Material</a></h4>
+                </div>
+                <div class="list-item">
+                    <img src="../../src/icons/conge.png" alt="" class="list-icon">
+                    <h4><a href="../conge.html">Congé</a></h4>
+                </div>
+                <div class="list-item ">
+                    <img src="../../src/icons/reclamation.png" alt="" class="list-icon">
+                    <h4><a href="../reclamation.html">Reclamation</a></h4>
+                </div>
+                <div class="list-item">
+                    <img src="../../src/icons/event.png" alt="" class="list-icon">
+                    <h4><a href="../presence.html">Events</a></h4>
+                </div>
+                <div class="list-item ">
+                    <img src="../../src/icons/stats.png" alt="" class="list-icon">
+                    <h4><a href="../stats.html">Stats</a></h4>
+                </div>
+            </div>
+            <div class="account-container">
+                <img src="../../src/imgs/user.jpg" alt="" class="icon-user">
+                <div class="account">
+                    <h3>Nedra Guessmi</h3>
+                    <h5>Human Ressource</h5>
+                </div>
+            </div>
+            <div class="logout">
+                <img src="../../src/icons/logout.png" alt="" class="logout-icon">
+                <h3>Logout</h3>
+            </div>
+        </aside>
+        <main>
+            <div class="header">
+                <div class="burger">
+                    <img src="../../src/icons/burger.png" alt="" class="burger">
+                </div>
+                <div class="date">
+                    <img src="../../src/icons/calender.png" alt="" class="icon">
+                    <h3>25 Feb.</h3>
+                </div>
+                <input type="search" name="" id="" placeholder="Search" >
+                <div class="notification">
+                    <img src="../../src/icons/notification.png" alt="" class="notif-icon">
+                </div>
+            </div>
+            <hr>
+            <div class="employeeHeader">
+                <h2 class="mt">List of employees</h2>
+                <button class="btnNotify"><a href="addEmployee.html">New Employee</a></button>
+            </div>
+            
+            <div class="container table-container">
+                <table>
+                    <tr>
+                        <th>Picture</th>
+                        <th>Full-name</th>
+                        <th>Role</th>
+                        <th>Mail</th>
+                        <th>Phone Number</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../../src/imgs/user.jpg" alt="" class="icon-user"></td>
+                        <td><a href="../profile.html">Cyrine Srairi</a></td>
+                        <td>Developper</td>
+                        <td>cyrine@gmail.com</td>
+                        <td>99-999-999</td>
+                        <td class="action-table">
+                            <img src="../../src/icons/notification.png" alt="" class="icon notifyMe">
+                            <img src="../../src/icons/edit.png" alt="" class="icon">
+                            <img src="../../src/icons/delete.png" alt="" class="icon delete">
+                        </td>            
+                    </tr>
+                    <tr>
+                        <td><img src="../../src/imgs/user.jpg" alt="" class="icon-user"></td>
+                        <td><a href="../profile.html">Cyrine Srairi</a></td>
+                        <td>Developper</td>
+                        <td>cyrine@gmail.com</td>
+                        <td>99-999-999</td>
+                        <td class="action-table">
+                            <img src="../../src/icons/notification.png" alt="" class="icon notifyMe">
+                            <img src="../../src/icons/edit.png" alt="" class="icon">
+                            <img src="../../src/icons/delete.png" alt="" class="icon delete">
+                        </td>        
+                    </tr>
+                    <tr>
+                        <td><img src="../../src/imgs/user.jpg" alt="" class="icon-user"></td>
+                        <td><a href="../profile.html">Cyrine Srairi</a></td>
+                        <td>Developper</td>
+                        <td>cyrine@gmail.com</td>
+                        <td>99-999-999</td>
+                        <td class="action-table">
+                            <img src="../../src/icons/notification.png" alt="" class="icon notifyMe">
+                            <img src="../../src/icons/edit.png" alt="" class="icon">
+                            <img src="../../src/icons/delete.png" alt="" class="icon delete">
+                        </td>         
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="../js/main-master.js"></script>
+<script src="js/employeeActions.js"></script>
+</html>
