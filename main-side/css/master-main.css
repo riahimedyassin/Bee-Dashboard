@@ -1461,3 +1461,14 @@ td a:hover {
     width: 98%;
     margin-top: 16px;
 }
+.grayContainer {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 10px;
+    min-height: 200px;
+    margin-top: 16px;
+    width: 100%;
+}
