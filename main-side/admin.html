@@ -54,8 +54,8 @@
                     <h3>Bee</h3>
                 </div>
                 <div class="list-container">
-                    <div class="list-item ">
-                        <img src="../src/icons/overview.png" alt="" class="list-icon ">
+                    <div class="list-item  active-item">
+                        <img src="../src/icons/overview.png " alt="" class="list-icon ">
                         <h4><a href="index.html">Overview</a></h4>
                     </div>
                     <div class="list-item">
@@ -82,7 +82,7 @@
                         <img src="../src/icons/event.png" alt="" class="list-icon">
                         <h4><a href="EventSide/events.html">Events</a></h4>
                     </div>
-                    <div class="list-item active-item">
+                    <div class="list-item ">
                         <img src="../src/icons/stats.png" alt="" class="list-icon">
                         <h4><a href="stats.html">Stats</a></h4>
                     </div>
@@ -116,10 +116,85 @@
                 <hr>
                 <h2 class="mt">Admin Profile</h2>
                 <div class="adminContainer">
+                    <div class="head">
+                        <div class="infoAdminSec">
+                            <h3>Nedra Guessmi</h3>
+                            <P>cyrine.srair@gmail.com</P>
+                            <h4 >Admin</h4>
+                            <hr>
+                            <h4>Last Visit : </h4>
+                            <h4>Local Time :</h4>
+                        </div>
+                        <div class="infoAdmin">
+                            <img src="../src/imgs/user.jpg" alt="" class="icon-profile">
+                            
+                        </div>
+                        <div class="infoAdminSec">
+                            <button class="update-button">Update</button>
+                            <button class="logout-button">Delete</button>
+                            <hr>
+                            <h3>Contact Support</h3>
+                            <P>riahi.yassin@gmail.com</P>
+                        </div>
+                    </div>
+                    <div class="adminBody" hidden>
+                        <h3 style="margin-top: 16px ;">Change Infos</h3>
+                        <div class="employeeInput">
+                            <div class="input-container">
+                                <div class="input">
+                                    <label for="">Full Name*</label>
+                                    <input type="text" value="Nedra Guessmi" class="input-edit" placeholder="Name & Forname">
+                                </div>
+                                <div class="input">
+                                    <label for="">CIN*</label>
+                                    <input type="text" value="41144144" class="input-edit" placeholder="">
+                                </div>
+        
+                            </div>
+                            <div class="input-container">
+                                <div class="input">
+                                    <label for="">Email*</label>
+                                    <input type="text" value="cyrine.Srairi@gmail.com" class="input-edit" placeholder="expl@mail.domain">
+                                </div>
+                                <div class="input">
+                                    <label for="">Phone Number*</label>
+                                    <input type="text" name="" id="" value="14141414" class="input-edit"
+                                        placeholder="+(CC) Your Number">
+                                </div>
+                            </div>
+                            <div class="input-container hidden-input">
+                                <div class="input">
+                                    <label for="">Adress 1*</label>
+                                    <input type="text" value="Test asda " class="input-edit" placeholder="Exemple : City Al Bustan">
+                                </div>
+                                <div class="input">
+                                    <label for="">Adress 2</label>
+                                    <input type="text" name="" id="" value="azdsaz dazed" class="input-edit" placeholder="(Optinal)">
+                                </div>
+                            </div>
+                            <div class="input-container hidden-input">
+                                <div class="input">
+                                    <label for="">Change Password</label>
+                                    <input type="password" value="zeferfgzerfg" class="input-edit" >
+                                </div>
+                                <div class="input">
+                                    <label for="">Status</label>
+                                    <select name="" id="" class="input-edit">
+                                        <option value="celib">Celibbataire</option>
+                                        <option value="mar">Married</option>
+                                        <option value="">Na3rech</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="update-button">Save</button>
+                            
+                    </div>
+                    </div>
                     
                 </div>
             </main>
         </div>
     </body>
 <script src="js/main-master.js"></script>
+<script src="updateAdmin.js"></script>
 </html>

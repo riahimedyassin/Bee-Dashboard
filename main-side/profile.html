@@ -93,7 +93,7 @@
                 </div>
                 <div class="list-item ">
                     <img src="../src/icons/stats.png" alt="" class="list-icon">
-                    <h4><a href="stats.html">Situation</a></h4>
+                    <h4><a href="stats.html">Stats</a></h4>
                 </div>
             </div>
             <div class="account-container">
@@ -134,6 +134,7 @@
                             <button class="btnNotify">Notfiy</button>
                             <button class="btnDanger">Alert</button>
                         </div> 
+                        
                         <h4>General info</h4>
                         <div class="infoGeneral">
                             <h5>Employment Type</h5>
@@ -147,6 +148,17 @@
                             <h5>Salary</h5>
                             <p>1100$</p>
                         </div>
+                        <hr>
+                        <h4 style="margin-top: 8px;">Shifts</h4>
+                        <div class="infoGeneral">
+                            <h5>Start</h5>
+                            <p>8:00AM</p>
+                        </div>
+                        <div class="infoGeneral">
+                            <h5>End</h5>
+                            <p>5:00PM</p>
+                        </div>
+                       
                     </div>
                 </div>
                 <div class="right-profile">
@@ -172,7 +184,7 @@
                     <div class="input-container">
                         <div class="input">
                             <label for="">Birth Date</label>
-                            <input type="text" value="18/03/03" disabled class="input-edit">
+                            <input type="date" value="" disabled class="input-edit">
                         </div>
                         <div class="input">
                             <label for="">Role</label>
@@ -194,7 +206,16 @@
                             <input type="text" name="" id="" value="92-999-999" disabled class="input-edit"> 
                         </div>
                     </div>
-                    
+                    <div class="input-container hidden-input">
+                        <div class="input">
+                            <label for="">Salary</label>
+                            <input type="text" value="1100" disabled class="input-edit">
+                        </div>
+                        <div class="input">
+                            <label for="">Employment Type</label>
+                            <input type="text" name="" id="" value="Remote" class="input-edit" disabled>
+                        </div>
+                    </div>
                     <div class="input-container hidden-input" >
                         <div class="input">
                             <label for="">CNAM</label>
@@ -249,6 +270,16 @@
                             <input type="password" value="28/06/03" disabled class="input-edit">
                         </div>
                     </div>
+                    <div class="input-container hidden-input" >
+                        <div class="input">
+                            <label for="">Start Time</label>
+                            <input type="time" value="0" disabled class="input-edit">
+                        </div>
+                        <div class="input">
+                            <label for="">End Time</label>
+                            <input type="time" value="28/06/03" disabled class="input-edit">
+                        </div>
+                    </div>
                     <button class="update-button show-more">Show More</button>
                     <button class="update-button">Update</button>
                 </div>
@@ -259,4 +290,5 @@
 </body>
 <script src="js/editEmployee.js"></script>
 <script src="js/main-master.js"></script>
+<script src="EmployeeSide/js/deletePopUp.js"></script>
 </html>

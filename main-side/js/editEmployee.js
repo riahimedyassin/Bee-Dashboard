@@ -10,8 +10,11 @@ myHidden.forEach(el=> {
     el.classList.add("hiddeMore");
 })
 let myShow=document.querySelector(".show-more");
+let nb=1;
 myShow.addEventListener("click",()=> {
     myHidden.forEach(el=> {
         el.classList.toggle("showMore");
+        nb++;
+        nb%2==0 ? myShow.innerHTML="Show Less" : myShow.innerHTML="Show More" 
     })
 });
