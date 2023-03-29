@@ -159,3 +159,7 @@ body {
     }
 
 }
+.resetPassContainer {
+    display: flex;
+    flex-direction: column;
+}
