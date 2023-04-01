@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/master-main.css">
     <link rel="stylesheet" href="../../css/root.css">
     <link rel="shortcut icon" href="../../src/icons/favicon.png" type="image/x-icon">
+
+    
 </head>
 
 <body>
@@ -110,7 +112,7 @@
                     <img src="../../src/icons/calender.png" alt="" class="icon">
                     <h3 class="date-now">25 Feb.</h3>
                 </div>
-                <input type="search" name="" id="" placeholder="Search">
+                <input type="search" name=""  placeholder="Search">
                 <div class="notification">
                     <img src="../../src/icons/notification.png" alt="" class="notif-icon">
                 </div>
@@ -120,6 +122,10 @@
             <h3 class="info">Some data can't be changed, Caution !</h3>
             <div class="container">
                 <div class="employeeInput">
+                    <div class="input-container hidden-input" >
+                       <h3>Choose A Professional Image*</h3>
+                       <input type="file" id="upload-container">
+                    </div>
                     <div class="input-container">
                         <div class="input">
                             <label for="">Full Name*</label>
@@ -127,7 +133,7 @@
                         </div>
                         <div class="input">
                             <label for="">Sexe*</label>
-                            <select name="" id="" class="input-edit">
+                            <select name=""  class="input-edit">
                                 <option value="">Homme</option>
                                 <option value="" selected>Femme</option>
                             </select>
@@ -141,7 +147,7 @@
                         </div>
                         <div class="input">
                             <label for="">Role*</label>
-                            <select name="" id="" class="input-edit">
+                            <select name=""  class="input-edit">
                                 <option value="">Developper</option>
                                 <option value="">RH</option>
                                 <option value="">Na3rech</option>
@@ -156,7 +162,7 @@
                         </div>
                         <div class="input">
                             <label for="">Phone Number*</label>
-                            <input type="text" name="" id="" value="" class="input-edit"
+                            <input type="text" name=""  value="" class="input-edit"
                                 placeholder="+(CC) Your Number">
                         </div>
                     </div>
@@ -168,7 +174,7 @@
                         </div>
                         <div class="input">
                             <label for="">CIN*</label>
-                            <input type="password" name="" id="" value="" class="" placeholder="Safe Field">
+                            <input type="password" name=""  value="" class="" placeholder="Safe Field">
                         </div>
                     </div>
                     <div class="input-container hidden-input">
@@ -178,7 +184,7 @@
                         </div>
                         <div class="input">
                             <label for="">State*</label>
-                            <input type="text" name="" id="" value="" class="input-edit" placeholder="Exemple : Bèja">
+                            <input type="text" name=""  value="" class="input-edit" placeholder="Exemple : Bèja">
                         </div>
                     </div>
                     <div class="input-container hidden-input">
@@ -188,7 +194,7 @@
                         </div>
                         <div class="input">
                             <label for="">Adress 2</label>
-                            <input type="text" name="" id="" value="" class="input-edit" placeholder="(Optinal)">
+                            <input type="text" name=""  value="" class="input-edit" placeholder="(Optinal)">
                         </div>
                     </div>
                     <div class="input-container hidden-input">
@@ -198,7 +204,7 @@
                         </div>
                         <div class="input">
                             <label for="">Status</label>
-                            <select name="" id="" class="input-edit">
+                            <select name=""  class="input-edit">
                                 <option value="celib">Celibbataire</option>
                                 <option value="mar">Married</option>
                                 <option value="">Na3rech</option>
@@ -225,10 +231,11 @@
                         </div>
                         <div class="input">
                             <label for="">Leave</label>
-                            <input type="password" name="" id="" value="" class="" placeholder="Leave Hour">
+                            <input type="password" name=""  value="" class="" placeholder="Leave Hour">
                         </div>
                     </div>
                     </div>
+
                     
                     <button class="update-button show-more">Add</button>
                 </div>
@@ -237,6 +244,7 @@
     </main>
     </div>
 </body>
+<script src="handlePreview.js"></script>
 <script src="../js/main-master.js"></script>
 
 </html>
