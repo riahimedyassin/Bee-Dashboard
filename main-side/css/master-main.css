@@ -1278,7 +1278,7 @@ td a:hover {
 }
 .conge-container h5 {
     margin-top: 4px;
-    color: gray;
+    color: black;
 }
 .conge-container .btnHolder {
     margin-bottom: -40px;
@@ -1541,3 +1541,38 @@ td a:hover {
     background-color: rgba(255, 0, 0, 0.768);
 }
 
+.durationTitle {
+    color: black;
+}
+.aiContainer {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid white;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-image: url(../../src/imgs/aibackground.avif);
+    background-size: cover;
+    color: white;
+}
+.aiContainer img {
+    filter: invert();
+    width: 50px;
+    height: 50px;
+}
+.btnTrain {
+    font-weight: bold;
+    width: 90px;
+    height: 40px;
+    border-radius: 4px;
+    border:none;
+    background-color:white;
+    color: #4f29f0;
+    cursor: pointer;
+}
+.m-top {
+    margin-top: 32px;
+}
